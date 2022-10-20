@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Document</title>
+</head>
+<body class="grey darken-2">
+ 
+      <!-- Carousel -->
+
+      <div class="carousel"> 
+        <a class="carousel-item" href="#one!"><img src="https://th.bing.com/th/id/OIP.WjtZzyd-75EVMuoBRudCtQHaHa?pid=ImgDet&rs=1"></a>
+        <a class="carousel-item" href="#two!"><img src="https://www.cultura.id/wp-content/uploads/2020/11/88_JOJI_ALBUM_KA_40.jpg"></a>
+        <a class="carousel-item" href="#three!"><img src="https://th.bing.com/th/id/R.3f73918672341230102917354996fa24?rik=wvXSJ8IXxbRXZA&riu=http%3a%2f%2fimg2-ak.lst.fm%2fi%2fu%2farO%2f286c3c59c3c14f9037f0b4ce0fef9bf5&ehk=kQe0coxPhqxtNUkhsGrUWRvwG%2bX8n7KtI0kvSKPU%2bC0%3d&risl=&pid=ImgRaw&r=0"></a>
+      </div>
+<br><br><br><br><br>
+
+      <!-- Content Slider -->
+
+      <div class="carousel carousel-slider center">
+        <div class="carousel-fixed-item center">
+          <a class="btn  waves-effect white grey-text darken-text-2">Open</a>
+        </div>
+        <div class="carousel-item red white-text" href="#one!">
+          <h2>First Panel</h2>
+          <p class="white-text">This is your first panel</p>
+        </div>
+        <div class="carousel-item amber white-text" href="#two!">
+          <h2>Second Panel</h2>
+          <p class="white-text">This is your second panel</p>
+        </div>
+        <div class="carousel-item purple- white-text" href="#three!">
+          <h2>Third Panel</h2>
+          <p class="white-text">This is your third panel</p>
+        </div>
+      </div>  
+
+<!-- Carousel full width slider -->
+
+      <div class="carousel carousel-slider container">
+        <a class="carousel-item" href="#one"><img src="https://th.bing.com/th/id/OIP.WjtZzyd-75EVMuoBRudCtQHaHa?pid=ImgDet&rs=1"></a>
+        <a class="carousel-item" href="#two"><img src="https://www.cultura.id/wp-content/uploads/2020/11/88_JOJI_ALBUM_KA_40.jpg"></a>
+        <a class="carousel-item" href="#three"><img src="https://th.bing.com/th/id/R.3f73918672341230102917354996fa24?rik=wvXSJ8IXxbRXZA&riu=http%3a%2f%2fimg2-ak.lst.fm%2fi%2fu%2farO%2f286c3c59c3c14f9037f0b4ce0fef9bf5&ehk=kQe0coxPhqxtNUkhsGrUWRvwG%2bX8n7KtI0kvSKPU%2bC0%3d&risl=&pid=ImgRaw&r=0"></a>
+      </div>
+
+      <!-- Floating action button -->
+      <div class="fixed-action-btn">
+        <a class="btn-floating btn-large purple darken-2">
+          <i class="large material-icons">apps</i>
+        </a>
+        <ul>
+          <li><a class="btn-floating purple darken-2"><i class="material-icons">audiotrack</i></a></li>
+          <li><a class="btn-floating purple darken-2"><i class="material-icons">collections</i></a></li>
+          <li><a class="btn-floating purple darken-2"><i class="material-icons">get_app</i></a></li>
+          <li><a class="btn-floating purple darken-2"><i class="material-icons">publish</i></a></li>
+        </ul>
+      </div>
+      
+      <!-- Jquery CDN -->
+      <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+        <script>
+        $(document).ready(function(){
+          // fixed action button
+          $('.fixed-action-btn').floatingActionButton();
+          // Carousel
+          $('.carousel').carousel();
+          $('.carousel.carousel-slider').carousel({
+    fullWidth: true
+  });
+  $('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+    indicators: true
+  });
+ 
+        });</script>
+</body>
+</html>
+
+

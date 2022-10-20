@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script>
+        window.onload = function () {
+
+            var chart = new CanvasJS.Chart("chartContainer", {
+                theme: "dark1", // "light1", "light2", "dark1", "dark2"
+                exportEnabled: true,
+                animationEnabled: true,
+                title: {
+                    text: "Pizza sold in 2022"
+                },
+                data: [{
+                    type: "pie",
+                    startAngle: 25,
+                    toolTipContent: "<b>{label}</b>: {y}%",
+                    showInLegend: "true",
+                    legendText: "{label}",
+                    indexLabelFontSize: 16,
+                    indexLabel: "{label} - {y}%",
+                    dataPoints: [
+                        { y: 35.3, label: "Pepperoni Pizza" },
+                        { y: 42.6, label: "Hawaiian Pizza" },
+                        { y: 13.8, label: "Mushroom Pizza" },
+                        { y: 8.3, label: "Vegetarian Pizza" },
+                    ]
+                }]
+            });
+            chart.render();
+
+        }
+    </script>
+
+    <title>Document</title>
+</head>
+
+<body class="grey darken-3">
+
+    <nav>
+        <div class="nav-wrapper grey darken-4">
+            <a href="#" class="brand-logo">Pizza Sells</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="sass.html">Sass</a></li>
+                <li><a href="badges.html">Components</a></li>
+                <li><a href="collapsible.html">JavaScript</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col s6 m6 l3">
+                <div class="card grey darken-4">
+                    <div class="card-content center">
+                        <span class="card-title white-text">Pepperoni Pizza</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col s6 m6 l3">
+                <div class="card grey darken-4">
+                    <div class="card-content center">
+                        <span class="card-title white-text">Hawaiian Pizza</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col s6 m6 l3">
+                <div class="card grey darken-4">
+                    <div class="card-content center">
+                        <span class="card-title white-text">Mushroom Pizza</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col s6 m6 l3">
+                <div class="card grey darken-4">
+                    <div class="card-content center">
+                        <span class="card-title white-text">Vegetarian Pizza</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 m12 l8 offset-l2">
+                <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+</body>
+
+</html>

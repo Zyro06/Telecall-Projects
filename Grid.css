@@ -1,0 +1,39 @@
+body{
+    background-color: purple;
+}
+
+.box {
+    background-color: rgb(35, 35, 35);
+    font-style: italic;
+    padding: 8px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.font1 {
+    background-color: rgb(35, 35, 35);
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+}
+
+.font2 {
+    background-color: rgb(35, 35, 35);
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    font-family: 'Courier New';
+    font-weight: bold;
+    font-style: italic;
+}
+
+.font3 {
+    background-color: rgb(35, 35, 35);
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    font-family: 'Lucida Sans';
+    font-style: Italic;
+}

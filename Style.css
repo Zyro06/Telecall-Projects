@@ -1,0 +1,20 @@
+h1, h2, h3, h4, h5, p {
+    color: red;
+
+
+}
+
+body {
+    background-image: url(https://i.ytimg.com/vi/0U_ZpggJhlg/maxresdefault.jpg);
+}
+
+button {
+    width: 150px;
+    padding: 10px;
+    background-color: blueviolet;
+    border: none;
+    color: antiquewhite;
+    border-radius: 20%;
+    cursor: pointer;
+    padding: size of bg
+}

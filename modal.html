@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <title>Document</title>
+</head>
+<body class="purple">
+    <div class="container">
+        <h3 class="white-text">Practice Modal</h3>
+        
+        <div class="row">
+
+        <!-- Modal Trigger -->
+        <a class="waves-effect waves-light red black-text btn modal-trigger" href="#modal1">Modal</a>
+        <!-- Modal fixed footer Trigger -->
+        <a class="waves-effect waves-light yellow black-text btn modal-trigger" href="#modal2">fixed footer</a>
+        <!-- Modal bottom sheet Trigger -->
+        <a class="waves-effect waves-light green black-text btn modal-trigger" href="#modal3">bottom sheets</a>
+
+
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal red">
+          <div class="modal-content">
+            <h4>Modal Header</h4>
+            <p>Labore autem recusandae et voluptatem doloremque. Ut voluptate tempore et exercitationem exercitationem et occaecati aut. Tenetur exercitationem eos sint rerum ad sunt.</p>
+          </div>
+          <div class="modal-footer red black-text">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+          </div>
+        </div>
+
+        <!-- Modal fixed footer Structure -->
+        <div id="modal2" class="modal modal-fixed-footer yellow">
+        <div class="modal-content">
+        <h4>Modal Header</h4>
+        <p>Provident harum commodi. Reprehenderit tempora et. Eveniet reprehenderit enim id quasi distinctio nobis maxime. Totam et libero. Eum eaque exercitationem rerum magnam voluptatibus quasi velit impedit.</p>
+        <p>Ea animi quas et libero id tempora repudiandae in repellendus. Et qui officiis. Quae soluta cum ex est expedita omnis magnam quae ipsa. Est reprehenderit alias non molestias est odio qui debitis.</p>
+        <p>Dolor vel aspernatur voluptate illo quis nostrum. Quaerat et voluptatum ut hic rem illum quia nihil. Quia ex ab qui ad laboriosam. Ad est in debitis omnis eaque.</p>
+        <p>Odio est quidem. Ad animi reprehenderit et et voluptatum. Rem et laborum et inventore sed suscipit. Recusandae commodi necessitatibus rerum animi blanditiis magnam. Earum quae ipsam exercitationem saepe corrupti quaerat. Veritatis ea exercitationem aut optio placeat.</p>
+        <p>Qui sunt rerum qui enim est. Optio consequatur sed magni aut amet. Ut quidem itaque eos et animi vitae. Voluptates doloremque occaecati eaque quia non saepe. Et temporibus impedit quia et earum dolor illo eos libero.</p>
+        <p>Rerum quibusdam qui ut velit laboriosam. Sunt pariatur recusandae quas fuga neque quis non. Dolor non ut iusto quidem non debitis eos. Quia et molestias temporibus omnis dolor placeat.</p>
+        <p>Alias quo quaerat repudiandae. Amet molestiae accusantium inventore accusamus rerum. Nisi culpa repudiandae omnis sed. Nulla rerum ipsam perferendis aut ratione.</p>
+        <p>Et ea blanditiis voluptatem et corporis et ratione. Consequatur nostrum dolor qui quia iste molestiae nesciunt et odit. Aperiam ipsa sequi sit. Magni necessitatibus id est esse dolores. Harum ipsa enim repellendus ut minima a. Veniam ipsum eius aliquid officia voluptas voluptates.</p>
+        <p>Quibusdam omnis et harum vitae quibusdam. Ea ea nulla. Enim eos libero sint ducimus natus et ratione. Id doloribus ex aut. Qui error impedit eos libero molestiae optio ut magni. Expedita ad quidem perferendis illum.</p>
+        <p>Animi nostrum quo. Eos culpa velit. Explicabo repellendus architecto. Perferendis quia omnis neque sapiente eligendi.</p>
+        </div>
+        <div class="modal-footer yellow">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+        </div>
+
+        <!-- Modal Structure -->
+        <div id="modal3" class="modal bottom-sheet green">
+        <div class="modal-content">
+        <h4>Modal Header</h4>
+        <p>Qui error dolores ullam dolorem ipsa sit ut sapiente. Minus laborum doloremque rerum. Similique consequatur exercitationem tempore explicabo quam itaque ex. Ut sed et fugit qui rerum.</p>
+        </div>
+        <div class="modal-footer green">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+        </div>
+
+    </div>
+            
+        
+
+      <!-- Jquery CDN -->
+      <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+            $('.modal').modal();
+            });
+        </script>
+</body>
+</html>

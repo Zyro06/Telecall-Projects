@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <title>My Dress Up Darling</title>
+</head>
+
+<body class="grey darken-3">
+    
+    <nav>
+        <div class="nav-wrapper blue">
+            <a href="#!" class="brand-logo center grey-text text-darken-3">My Dress-up Darling</a>
+
+            <a href="#" data-target="hamburger-icon" class="sidenav-trigger right"><i
+                    class="material-icons grey-text text-darken-3">menu</i></a>
+
+            <ul class="right hide-on-med-and-down">
+                <li><a href="Top Anime" class="grey-text text-darken-3">Chapter 1</a></li>
+                <li><a href="Seasonal Anime" class="grey-text text-darken-3">Chapter 2</a></li>
+                <li><a href="https://myanimelist.net/" class="grey-text text-darken-3">Chapter 3</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav blue" id="hamburger-icon">
+        <li><a href="Top Anime" class="grey-text text-darken-3">Chapter 1</a></li>
+        <li><a href="Seasonal Anime" class="grey-text text-darken-3">Chapter 2</a></li>
+        <li><a href="https://myanimelist.net/" class="grey-text text-darken-3">Chapter 3</a></li>
+    </ul>
+
+    <div class="parallax-container">
+        <div class="parallax"><img src="1218592.png">
+        </div>
+      </div>
+
+      <div class="container white">
+        <ul class="collapsible">
+            <li>
+              <div class="collapsible-header"><i class="material-icons">filter_drama</i>chapter 1</div>
+              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">place</i>Chapter 2</div>
+              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">whatshot</i>Chapter 3</div>
+              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+          </ul>
+      </div>
+
+<div class="container">
+    <a onclick="M.toast({html: 'This is the introduction.' , classes: 'rounded' })" class="btn tooltipped" data-position="top" data-tooltip="Here is the introduction"> introduction.</a>
+
+    <a onclick="M.toast({html: 'This is the body.' , classes: 'rounded' })" class="btn tooltipped" data-position="bottom" data-tooltip="Here is the body"> body.</a>
+
+    <a onclick="M.toast({html: 'This is the conclusion.' , classes: 'rounded' })" class="btn tooltipped" data-position="right" data-tooltip="Here is the conclusion"> conclusion.</a>
+
+</div>
+
+        <div class="carousel"> 
+            <a class="carousel-item" href="#one!"><img src="https://th.bing.com/th/id/OIP.G905Vwhyfm3UT8BAKV8dOAHaKo?pid=ImgDet&rs=1"></a>
+            <a class="carousel-item" href="#two!"><img src="https://comicbookrealm.com/cover-scan/0f6aaf8966d330f22a463f5d4aa198f3/xl/square-enix-manga-my-dress-up-darling-soft-cover-2.jpg"></a>
+            <a class="carousel-item" href="#three!"><img src="https://th.bing.com/th/id/R.e19f4a1b9c5a9d558660417b0d306fba?rik=QYs4x1TGL90DIw&riu=http%3a%2f%2fandreacecelia.com%2fwp-content%2fuploads%2f2020%2f09%2fDressUpDarling_vol3_cover-768x1104.jpg&ehk=CTKzK5ULY2fZq2Utsbw%2fAZeJMvM%2bhAAr3F42SJq18Vc%3d&risl=&pid=ImgRaw&r=0"></a>
+          </div>
+
+    </div>
+
+
+
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+        //Side-Nav
+            $('.sidenav').sidenav({
+                edge: 'right'    
+            });
+        });
+        // Carousel
+        $('.carousel').carousel({
+            duration: 100,
+            dist: -200,
+            padding: 200,
+        });
+         
+  $('.collapsible').collapsible({
+    accordion: false
+  });
+  $('.parallax').parallax() ;  
+
+  $('.tooltipped').tooltip();
+
+    </script>
+    
+
+</body>
+
+</html>
